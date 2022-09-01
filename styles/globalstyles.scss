@@ -1,0 +1,58 @@
+// my styles
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+// Colors
+$teal: #008080;
+$white: #FFFFFF;
+$grey: #C1C1C1;
+$black: #000000;
+
+// font sizes
+$title: 4rem;
+$subtitle: 2.5rem;
+$paragraph: 1rem;
+
+// Variables
+$family-sans-serif: "Roboto", sans-serif;
+$primary: $teal;
+$light: $white;
+$light-secondary: $grey;
+$link: $light;
+$dark: $black;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+
+//Typography
+$size-1: $title; //h1 for title only
+$size-2: $subtitle; //h2 for subtitle landing page
+$size-3: $paragraph; //paragraph content
+
+
+//content and others
+$link: $light;
+$link-hover: $light-secondary;
+$body-background-color: $light;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+$background: $white;
+
+// Components
+
+// navbar
+$navbar-background-color: $primary;
+$navbar-item-color: $light;
+$navbar-item-hover-color: $light-secondary;
+$navbar-item-hover-background-color: transparent;
+$navbar-burger-color: $primary;
+$navbar-padding-horizontal: 10rem;
+
+// footer
+$footer-background-color: $primary;
+
+// Import only what you need from Bulma
+@import "~bulma/bulma.sass";
