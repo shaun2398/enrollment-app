@@ -9,3 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added September 2, 2022
 - sass global stylessheet
 - layout page
+
+### Added September 5, 2022
+- Footer Content
+- Adjust navbar spacing
