@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer() {
   return (
     <footer className="footer">
-      <div class="container is-fluid columns">
+      <div class="container is-desktop is-fluid columns">
         <div class="column content is-7">
           <a href="/">
             <img
