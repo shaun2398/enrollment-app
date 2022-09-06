@@ -13,6 +13,7 @@ $black: #000000;
 // font sizes
 $title: 4rem;
 $subtitle: 2.5rem;
+$button-text: 2rem;
 $paragraph: 1rem;
 
 // Variables
@@ -28,7 +29,8 @@ $fullhd-enabled: false;
 //Typography
 $size-1: $title; //h1 for title only
 $size-2: $subtitle; //h2 for subtitle landing page
-$size-3: $paragraph; //paragraph content
+$size-3: $button-text; //button content
+$size-4: $paragraph; //paragraph content
 
 
 //content and others
@@ -49,6 +51,11 @@ $navbar-item-hover-color: $light-secondary;
 $navbar-item-hover-background-color: transparent;
 $navbar-burger-color: $primary;
 $navbar-padding-horizontal: 2rem;
+
+// landing
+
+$button-padding-vertical: 1.5rem ;
+$button-padding-horizontal: 1.5rem;
 
 // footer
 $footer-background-color: $primary;

@@ -1,8 +1,13 @@
-.container {
+.container{
+  background-image: url('/landing_page.jpg') ;
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   padding: 0 2rem;
-  height: 80vh;
+  height: auto;
   width: 100vw;
-}
+  }
 
 .main {
   min-height: 100vh;

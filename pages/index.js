@@ -2,7 +2,7 @@
 import React from "react"
 
 // Components
-
+import Landing from "../components/Landing";
 
 //Styles
 import styles from '../styles/Home.module.css'
@@ -13,8 +13,8 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
 
   return (
-      <div className={styles.container}>
-        <h1 className="is-size-1 is-capitalized has-text-centered">hello next</h1>
-      </div>
-  )
+    <section className={styles.container}>
+      <Landing />
+    </section>
+  );
 }
