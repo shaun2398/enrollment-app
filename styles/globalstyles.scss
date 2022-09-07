@@ -12,6 +12,7 @@ $black: #000000;
 
 // font sizes
 $title: 4rem;
+$page-title: 3.75rem;
 $subtitle: 2.5rem;
 $button-text: 2rem;
 $paragraph: 1rem;
@@ -28,7 +29,8 @@ $fullhd-enabled: false;
 
 //Typography
 $size-1: $title; //h1 for title only
-$size-2: $subtitle; //h2 for subtitle landing page
+$size-1: $page-title; //h2 for title only
+$size-2: $subtitle; //h3 for subtitle landing page
 $size-3: $button-text; //button content
 $size-4: $paragraph; //paragraph content
 

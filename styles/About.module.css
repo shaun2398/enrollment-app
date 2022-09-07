@@ -1,0 +1,20 @@
+.about_container{
+    width: 100%;
+    height: auto;
+    background-color: #F5F5F5;
+}
+
+.about_hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url('/about_page.jpg'); /* blurs background image */
+    background-position: center bottom;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0 2rem;
+    width: 100vw;
+    height: 500px;
+    flex-direction: column;
+}

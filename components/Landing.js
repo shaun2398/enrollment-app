@@ -9,7 +9,7 @@ export default function Landing() {
           <h1 class="is-size-1 has-text-weight-bold">Lorem Ipsum Dolor</h1>
         </div>
         <div class="my-6">
-          <h2 class="is-size-2">
+          <h2 class="is-size-3">
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat.
           </h2>
