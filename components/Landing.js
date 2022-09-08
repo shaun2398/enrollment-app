@@ -1,5 +1,6 @@
-import React from 'react'
-import LargeButton from './LargeButton';
+import React from "react";
+
+import LargeButton from "./LargeButton";
 
 export default function Landing() {
   return (
@@ -13,7 +14,7 @@ export default function Landing() {
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat.
           </h2>
-          <LargeButton name="Sign Up"/>
+          <LargeButton name="Sign Up" />
         </div>
       </div>
     </section>
