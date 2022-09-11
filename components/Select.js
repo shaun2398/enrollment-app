@@ -19,7 +19,6 @@ export default function Select({label, name}) {
         const fetchOptionData = async () => {
           // region end point
           let region = `${name}`;
-          let myRegion = `${region}+${regionCode}/`
           let apiLink = `https://psgc.gitlab.io/api/${region}/`;
           const data = await fetch(apiLink);
           const res = await data.json();

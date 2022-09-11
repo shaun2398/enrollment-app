@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enrollment Page
 - New components (Select, Input, Date)
 
+### Cleanup
+- removed bugs and unnecessary codes
+
 09/08/2022
 ### Added
 - Mechanics Page
