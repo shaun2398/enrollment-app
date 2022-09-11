@@ -1,10 +1,17 @@
 import React from 'react'
+import Link from 'next/link'
 
 export default function MediumButton(props) {
     const {name, isUserAgree} = props
   return (
-    <button class="button is-rounded is-primary my-5 is-fullwidth is-uppercase" title="Disabled button" disabled={!isUserAgree}>
-      {name}
-    </button>
+    <Link href="/enrollment/forms">
+        <button
+          class="button is-rounded is-primary my-5 is-fullwidth is-uppercase"
+          title="Toggle Button"
+          disabled={!isUserAgree}
+        >
+          {name}
+        </button>
+    </Link>
   );
 }
