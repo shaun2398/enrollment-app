@@ -11,10 +11,10 @@ $grey: #C1C1C1;
 $black: #000000;
 
 // font sizes
-$title: 4rem;
-$page-title: 3.75rem;
-$subtitle: 2.5rem;
-$button-text: 2rem;
+$landing-page-title: 4rem;
+$landing-page-subtitle: 3.75rem;
+$section-title: 2.5rem;
+$section-subtitle: 2rem;
 $paragraph: 1rem;
 
 // Variables
@@ -28,11 +28,13 @@ $fullhd-enabled: false;
 
 
 //Typography
-$size-1: $title; //h1 for title only
-$size-1: $page-title; //h2 for title only
-$size-2: $subtitle; //h3 for subtitle landing page
-$size-3: $button-text; //button content
-$size-4: $paragraph; //paragraph content
+$size-1: $landing-page-title; //h1 for landing page title only
+$size-2: $landing-page-subtitle; //h2 for landing page subtitle only
+$size-3: $section-title; //h3 section page title
+$size-4: $paragraph; // h4 section page subtitle
+$size-5: $paragraph; //paragraph
+$size-5: $paragraph; 
+$size-6: $paragraph; 
 
 
 //content and others

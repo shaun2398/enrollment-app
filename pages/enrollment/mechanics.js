@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
+import Button from '../../components/Button';
 import Checkbox from '../../components/Checkbox';
-import MediumButton from '../../components/MediumButton';
 
 export default function mechanics() {
 
@@ -32,7 +32,12 @@ export default function mechanics() {
             <Checkbox toggleAgree={toggleAgree} label={label} />
           </div>
           <div className="container">
-            <MediumButton name="Next" isUserAgree={isUserAgree} />
+            <Button
+              name="next"
+              nextPage="/enrollment/forms"
+              size="medium"
+              hasToggle={!isUserAgree}
+            />
           </div>
         </div>
       </div>

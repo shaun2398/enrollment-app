@@ -1,6 +1,6 @@
 import React from "react";
 
-import LargeButton from "./LargeButton";
+import Button from "./Button";
 
 export default function Landing() {
   return (
@@ -14,7 +14,11 @@ export default function Landing() {
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat.
           </h2>
-          <LargeButton name="Sign Up" />
+          <Button
+            name="Sign Up Now"
+            nextPage="/enrollment/mechanics"
+            size="medium"
+          />
         </div>
       </div>
     </section>

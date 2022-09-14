@@ -1,22 +1,28 @@
 import React from 'react'
 
-export default function Input(props) {
-    const {label, type} = props
+import { useField, ErrorMessage } from 'formik';
 
+import styles from '../styles/errors.module.css'
+
+export default function Input({label, ...props}) { //destructure props
+    // variables and objects
+    const [field, meta] = useField(props)
     const placeholders = {
-      "First Name": "Juan",
-      "Middle Name": "Reyes",
-      "Last Name": "Dela Cruz",
-      "Complete Address": "House #, Street, District, City/Municipality Ex. 7114 Kundiman Street Sampaloc, Manila",
-      "Phone Number": "09123456789",
-      "Email": "jdelacruz@gmail.com",
+      firstName: "Juan",
+      middleName: "Reyes",
+      lastName: "Dela Cruz",
+      completeAddress: "House #, Street, District, City/Municipality Ex. 7114 Kundiman Street Sampaloc, Manila",
+      phoneNumber: "09123456789",
+      email: "jdelacruz@gmail.com",
     };
-
+    
+    // functions
   return (
     <div class="field my-5">
       <div class="control is-large">
-        <label class="label has-text-left is-uppercase">{label}</label>
-        <input class="input is-large is-primary" type={type} placeholder={`${placeholders[`${label}`]}`} ></input>
+        <label class="label has-text-left is-uppercase" htmlFor={field.name}>{label}</label>
+        <input class={`input is-large is-primary ${meta.touched && meta.error && 'is-danger'}`} {...field} {...props} placeholder={`${placeholders[`${field.name}`]}`} ></input>
+        <ErrorMessage component="div" name={field.name} className={styles.error}/>
       </div>
     </div>
   );
