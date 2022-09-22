@@ -20,7 +20,7 @@ export default function summary() {
             <Button name="back" nextPage="/enrollment/forms" size="large" />
           </p>
           <p class="control">
-            <Button name="submit" nextPage="#" size="large" />
+            <Button name="submit" nextPage="/enrollment/success" size="large" />
           </p>
         </div>
       </div>
