@@ -48,7 +48,7 @@ export default function Table() {
           <br />
           <tr>
             <th>EMAIL:</th>
-            <td class="is-uppercase has-text-right">{email}</td>
+            <td class="has-text-right">{email}</td>
           </tr>
           <br />
           <tr>

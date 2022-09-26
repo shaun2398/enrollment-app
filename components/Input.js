@@ -20,7 +20,8 @@ export default function Input({label, ...props}) { //destructure props
   return (
     <div class="field my-5">
       <div class="control is-large">
-        <label class="label has-text-left is-uppercase" htmlFor={field.name}>{label}</label>
+        {/* <label class="label has-text-left is-uppercase" htmlFor={field.name}>{label}</label> */}
+        <label class={`label has-text-left is-uppercase ${label === 'email' ? 'is-lowercase' : ''}`} htmlFor={field.name}>{label}</label>
         <input class={`input is-large is-primary ${meta.touched && meta.error && 'is-danger'}`} {...field} {...props} placeholder={`${placeholders[`${field.name}`]}`} ></input>
         <ErrorMessage component="div" name={field.name} className={styles.error}/>
       </div>

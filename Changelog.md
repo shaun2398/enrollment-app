@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+09/26/2022
+### Added
+- submit form data to google sheet
+
 09/23/2022
 ### Added
 - Redux toolkit for statemanagement
