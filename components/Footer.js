@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -24,7 +25,7 @@ export default function Footer() {
           </p>
           <br />
           <p>
-            <a href="/">© 2022, Lorem · Ipsum (Lorem Health Solutions, Inc.)</a>
+            <Link href="/info/about"><a>© 2022, Lorem · Ipsum (Lorem Health Solutions, Inc.)</a></Link>
           </p>
         </div>
 
@@ -32,15 +33,15 @@ export default function Footer() {
           <h4 className="is-uppercase has-text-white">work with us</h4>
           <br />
           <p>
-            <a href="/">Lorem</a>
+            <a href="/info/lorem">Lorem</a>
           </p>
           <br />
           <p>
-            <a href="/">Ipsum</a>
+            <a href="/info/ipsum">Ipsum</a>
           </p>
           <br />
           <p>
-            <a href="/">Dolor</a>
+            <a href="/info/dolor">Dolor</a>
           </p>
           <br />
         </div>
@@ -49,15 +50,15 @@ export default function Footer() {
           <h4 className="is-uppercase has-text-white">learn more</h4>
           <br />
           <p>
-            <a href="/">Terms and Conditions</a>
+            <a href="/info/terms-and-conditions">Terms and Conditions</a>
           </p>
           <br />
           <p>
-            <a href="/">Help Center</a>
+            <a href="/info/contacts">Contacts</a>
           </p>
           <br />
           <p>
-            <a href="/">Privacy Policy</a>
+            <a href="/info/privacy-policy">Privacy Policy</a>
           </p>
         </div>
       </div>
