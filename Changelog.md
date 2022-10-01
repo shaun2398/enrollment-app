@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+10/01/2022
+### Added
+- addtional info pages (faqs, contacts and terms and conditions)
+
+### Update
+- Privacy policy to FAQs
+
 09/27/2022
 ### Added
 - Fall back page

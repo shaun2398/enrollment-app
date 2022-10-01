@@ -1,0 +1,9 @@
+.terms{
+    overflow: auto;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0 2em;
+}

@@ -50,7 +50,7 @@ export default function Footer() {
           <h4 className="is-uppercase has-text-white">learn more</h4>
           <br />
           <p>
-            <a href="/info/terms-and-conditions">Terms and Conditions</a>
+            <a href="/info/terms">Terms and Conditions</a>
           </p>
           <br />
           <p>
@@ -58,7 +58,7 @@ export default function Footer() {
           </p>
           <br />
           <p>
-            <a href="/info/privacy-policy">Privacy Policy</a>
+            <a href="/info/faqs">FAQs</a>
           </p>
         </div>
       </div>
