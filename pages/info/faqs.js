@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Box from '../../components/Box';
+import Collapsible from '../../components/Collapsible';
 import SectionTitle from '../../components/SectionTitle';
 
 import { faqs } from './service';
@@ -13,7 +13,7 @@ export default function FAQs() {
     <section class="container is-large has-text-centered my-6">
       <SectionTitle name="Frequently Asked Questions" />
       {faqs.map((item) => (
-        <Box question={item.question} answer={item.answer} />
+        <Collapsible title={item.question} content={item.answer} />
       ))}
     </section>
   );

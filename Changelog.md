@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+10/03/2022
+### Added
+- Collapsible component for FAQs page
+
+### Removed
+-
+
 10/01/2022
 ### Added
 - addtional info pages (faqs, contacts and terms and conditions)
