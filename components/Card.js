@@ -1,7 +1,8 @@
 import React from 'react'
 
 export default function Card(props) {
-    const {img, alt, title} = props
+    const {img, alt, title, } = props
+
   return (
     <div class="card m-6">
       <div class="card-image">
