@@ -9,9 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 10/08/2022
 ### Update
+- New service page
+- New Forms page (validation)
 - Mechanics page
 - About page
-- New Forms page
+
 
 10/06/2022
 ### Added

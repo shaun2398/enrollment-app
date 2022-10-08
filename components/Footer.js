@@ -14,18 +14,20 @@ export default function Footer() {
               height="28"
             />
           </a>
-          <br /><br />
+          <br />
+          <br />
           <p className="has-text-white">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur.
-            <br/>
-            Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            <br />
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
           </p>
           <br />
           <p>
-            <Link href="/info/about"><a>© 2022, Lorem · Ipsum (Lorem Health Solutions, Inc.)</a></Link>
+            <Link href="/info/about">
+              <a>© 2022, Lorem · Ipsum (Lorem Health Solutions, Inc.)</a>
+            </Link>
           </p>
         </div>
 
@@ -33,15 +35,21 @@ export default function Footer() {
           <h4 className="is-uppercase has-text-white">work with us</h4>
           <br />
           <p>
-            <a href="/info/lorem">Lorem</a>
+            <Link href="/info/pharmacy">
+              <a>Pharmacy</a>
+            </Link>
           </p>
           <br />
           <p>
-            <a href="/info/ipsum">Ipsum</a>
+            <Link href="/info/laboratory">
+              <a>Laboratory</a>
+            </Link>
           </p>
           <br />
           <p>
-            <a href="/info/dolor">Dolor</a>
+            <Link href="/info/consultation">
+              <a>Consultations</a>
+            </Link>
           </p>
           <br />
         </div>

@@ -1,39 +1,43 @@
 import React from 'react'
 
 import Card from '../../components/Card'
+import SectionTitle from '../../components/SectionTitle'
 
 import styles from '../../styles/Services.module.css'
+import { servicesData } from './service/serviceData';
 
 export default function services() {
   return (
     <div>
-      <section>
-        <div className={styles.services_hero}>
-          <h1 class="is-size-1 has-text-centered has-text-weight-bold">Services</h1>
+      <div className={styles.services_hero}>
+        <SectionTitle name="Services" />
+      </div>
+      <div class="container is-widescreen">
+        <div class="content is-medium has-text-justified my-6">
+          <h4 class="title is-size-4 has-text-centered">What We Offer</h4>
+          <p class="mx-5">
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque corrupti quos
+            dolores et quas molestias excepturi sint occaecati cupiditate non
+            provident, similique sunt in culpa qui officia deserunt mollitia
+            animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
+            est et expedita distinctio.
+          </p>
         </div>
-        <div class="container is-fluid mb-5">
-          <div class="columns is-desktop is-danger">
-            <div class="column">
-              <Card 
-                img="/pharmacy.jpg" 
-                alt="Pharmacy" 
-                title="Pharmacy" />
-            </div>
-            <div class="column">
-              <Card 
-                img="/laboratory.jpg" 
-                alt="Laboratory Services" 
-                title="Laboratory" />
-            </div>
-            <div class="column">
-              <Card 
-                img="/consultation.jpg" 
-                alt="online consulation" 
-                title="Consultation" />
-            </div>
+      </div>
+      <div class="container is-fluid columns is-desktop">
+        {servicesData.map((card) => (
+          <div class="column">
+              <Card
+                title={card.title}
+                image={card.image}
+                alt={card.alt}
+                content={card.content}
+                nextPage={card.nextPage}
+              />
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
     </div>
   );
 }

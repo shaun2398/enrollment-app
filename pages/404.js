@@ -6,7 +6,7 @@ import { faWarning } from '@fortawesome/free-solid-svg-icons'
 
 export default function NotFound() {
   return (
-    <section class="section is-large has-text-centered">
+    <section class="section is-medium has-text-centered">
       <span class="icon has-text-warning is-large is-size-1 my-6">
         <FontAwesomeIcon icon={faWarning}></FontAwesomeIcon>
       </span>
@@ -15,7 +15,7 @@ export default function NotFound() {
         Click here to go back{" "}
         <Link href="/">
           <a>
-            <strong>Home</strong>
+            <strong class="is-underlined">Home</strong>
           </a>
         </Link>
       </h3>
