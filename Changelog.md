@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Simple animation
 
+10/06/2022
+### Added
+- Simple animation
+
 10/03/2022
 ### Added
 - Collapsible component for FAQs page
