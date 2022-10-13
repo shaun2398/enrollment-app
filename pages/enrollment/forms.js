@@ -3,7 +3,6 @@ import {useRouter} from 'next/router'
 
 import {Formik, Form} from 'formik' 
 
-import Date from '../../components/Date';
 import Input from '../../components/Input';
 import Select from '../../components/Select';
 import SectionTitle from '../../components/SectionTitle';
@@ -41,7 +40,6 @@ export default function form() {
                   <Input name="middleName" label="Middle Name" type="text" />
                   <Input name="lastName" label="Last Name" type="text" />
                   <Select name="gender" label="gender" />
-                  {/* <Date name="dateOfBirth" label="Birthdate" type="date" /> */}
                   <Input name="dateOfBirth" label="Birthdate" type="text" />
                   <Input name="email" label="Email" type="email" />
                   <Input name="phoneNumber" label="Phone Number" type="tel" />

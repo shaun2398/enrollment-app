@@ -35,19 +35,19 @@ export default function Footer() {
           <h4 className="is-uppercase has-text-white">work with us</h4>
           <br />
           <p>
-            <Link href="/info/pharmacy">
+            <Link href="/workwithus/pharmacy">
               <a>Pharmacy</a>
             </Link>
           </p>
           <br />
           <p>
-            <Link href="/info/laboratory">
+            <Link href="/workwithus/laboratory">
               <a>Laboratory</a>
             </Link>
           </p>
           <br />
           <p>
-            <Link href="/info/consultation">
+            <Link href="/workwithus/consultation">
               <a>Consultations</a>
             </Link>
           </p>
