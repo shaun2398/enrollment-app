@@ -7,4 +7,5 @@ export const initialValues={
     email: "",
     phoneNumber: "",
     completeAddress: "",
+    description: ""
   }

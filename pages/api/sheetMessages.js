@@ -2,16 +2,7 @@ import {google} from "googleapis"
 
 async function handler (req, res) {
     if (req.method === "POST"){
-    		const {
-          firstName,
-          middleName,
-          lastName,
-          gender,
-          dateOfBirth,
-          email,
-          phoneNumber,
-          completeAddress,
-        } = req.body;
+    		const { completeName, email, description } = req.body;
 		res.json({message: "Only POST requests are allowed"});
 
     const auth = new google.auth.GoogleAuth({
@@ -35,21 +26,10 @@ async function handler (req, res) {
     
     const response = await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.SPREADSHEET_ID,
-      range: "MEMBERS!A2:H",
+      range: "MESSAGES!A2:C",
       valueInputOption: "USER_ENTERED",
       requestBody: {
-        values: [
-          [
-            firstName,
-            middleName,
-            lastName,
-            gender,
-            dateOfBirth,
-            email,
-            phoneNumber,
-            completeAddress,
-          ],
-        ],
+        values: [[completeName, email, description]],
       },
     });
 

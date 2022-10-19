@@ -14,7 +14,8 @@ export default function Input({label, ...props}) { //destructure props
       completeAddress: "House #, Street, District, City/Municipality Ex. 7114 Kundiman Street Sampaloc, Manila",
       phoneNumber: "09123456789",
       email: "jdelacruz@gmail.com",
-      dateOfBirth: "MM/DD/YYYY"
+      dateOfBirth: "MM/DD/YYYY",
+      completeName: "Juan Reyes Dela Cruz"
     };
     
     // functions

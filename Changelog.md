@@ -7,10 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-10/08/2022
+10/19/2022
+
+### Update
+ - new contacts page 
+
+### Added
+ - message forms components (Textbox component)
+ - message forms initial values and validations
+
+10/09/2022
+
 ### Added
  - new workwith us pages (pharmacy, online consultation and laboratory services)
-
 
 10/08/2022
 ### Update
