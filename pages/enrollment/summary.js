@@ -29,46 +29,47 @@ export default function summary() {
   }
 
   return (
-    <div class="container">
-      <div class="container is-fluid has-text-centered">
-        <Formik
-          initialValues={initialState.values}
-          onSubmit={(values) => {
-            router.push("/enrollment/success")
-            submitHandler(values)
-            dispatch(resetValues())            
-          }}
-        >
-          {(formik) => (
-            <div>
-              <SectionTitle name="Confirm Your Details" />
-              <Form>
-                <div class="container my-5">
-                  {/* access redux data in the table component */}
-                  <Table />
+    <section class="section">
+      <div class="container notification">
+        <div class="container is-fluid has-text-centered">
+          <Formik
+            initialValues={initialState.values}
+            onSubmit={(values) => {
+              router.push("/enrollment/success");
+              submitHandler(values);
+              dispatch(resetValues());
+            }}
+          >
+            {(formik) => (
+              <div>
+                <div class="is-underlined">
+                  <SectionTitle name="Confirm Your Details" />
                 </div>
+                <Form>
+                  <div class="container my-5">
+                    {/* access redux data in the table component */}
+                    <Table />
+                  </div>
 
-                {/* buttongroup */}
-                <div class="field is-grouped container is-fluid is-flex is-justify-content-space-between">
-                  <p class="control">
-                    <Button
-                      name="back"
-                      nextPage="/enrollment/forms"
-                      size="large"
-                    />
-                  </p>
-                  <p class="control">
-                    <SubmitButton
-                      name="submit"
-                      size="large"                      
-                    />
-                  </p>
-                </div>
-              </Form>
-            </div>
-          )}
-        </Formik>
+                  {/* buttongroup */}
+                  <div class="field is-grouped container is-fluid is-flex is-justify-content-space-between">
+                    <p class="control">
+                      <Button
+                        name="back"
+                        nextPage="/enrollment/forms"
+                        size="large"
+                      />
+                    </p>
+                    <p class="control">
+                      <SubmitButton name="submit" size="large" />
+                    </p>
+                  </div>
+                </Form>
+              </div>
+            )}
+          </Formik>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

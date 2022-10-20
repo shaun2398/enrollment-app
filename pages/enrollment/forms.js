@@ -21,9 +21,9 @@ export default function form() {
   const dispatch = useDispatch(); // used to call action
 
   return (
-    <section className="section">
-      <div className="container">
-        <div className="notification has-text-centered py-6">
+    <section class="section">
+      <div className="container notification">
+        <div className="has-text-centered py-6">
           <Formik
             initialValues={initialState.values}
             validationSchema={validationSchema}
@@ -35,26 +35,32 @@ export default function form() {
             {(formik) => (
               <div>
                 <SectionTitle name="Enter Personal Information" />
-                <Form>
+                <Form class="box">
                   <Input name="firstName" label="First Name" type="text" />
                   <Input name="middleName" label="Middle Name" type="text" />
                   <Input name="lastName" label="Last Name" type="text" />
                   <Select name="gender" label="gender" />
-                  <Input name="dateOfBirth" label="Birthdate" type="text" />
+                  <Input
+                    name="birthday"
+                    label="Birthday: MM/DD/YYYY"
+                    type="text"
+                  />
                   <Input name="email" label="Email" type="email" />
                   <Input name="phoneNumber" label="Phone Number" type="tel" />
                   <Input
                     name="completeAddress"
-                    label="Complete Address"
+                    label="Complete Address: House #, Street, District, City/Municipality"
                     type="text"
                   />
                   {/* submit button should not have Link wrapper  */}
-                  <SubmitButton
-                    name="next"
-                    size="medium"
-                    // hasToggle={!(formik.isValid && formik.dirty)} if you want to initially disable the button until the initial value changes
-                    hasToggle={!(formik.isValid)}
-                  />
+                  <div class="mt-6">
+                    <SubmitButton
+                      name="next"
+                      size="medium"
+                      // hasToggle={!(formik.isValid && formik.dirty)} if you want to initially disable the button until the initial value changes
+                      hasToggle={!formik.isValid}
+                    />
+                  </div>
                 </Form>
               </div>
             )}

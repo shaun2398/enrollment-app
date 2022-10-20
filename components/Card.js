@@ -15,7 +15,7 @@ export default function Card(props) {
         <div class="content">
           <h4 class="is-uppercase">{title}</h4>
           <p>{content}</p>
-          <Link href={`info/${nextPage}`}>
+          <Link href={`${nextPage}`}>
             <button class="button is-info card-footer-item">LEARN MORE</button>
           </Link>
         </div>

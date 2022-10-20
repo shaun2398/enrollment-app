@@ -11,17 +11,17 @@ export default function Input({label, ...props}) { //destructure props
       firstName: "Juan",
       middleName: "Reyes",
       lastName: "Dela Cruz",
-      completeAddress: "House #, Street, District, City/Municipality Ex. 7114 Kundiman Street Sampaloc, Manila",
-      phoneNumber: "09123456789",
+      completeAddress: "7114 Kundiman Street Sampaloc, Manila",
+      phoneNumber: "+639123456789 or 09123456789",
       email: "jdelacruz@gmail.com",
-      dateOfBirth: "MM/DD/YYYY",
+      birthday: "01/01/2004",
       completeName: "Juan Reyes Dela Cruz"
     };
     
     // functions
   return (
     <div class="field my-5">
-      <div class="control is-large">
+      <div class="control is-large is-flex is-flex-direction-column is-align-items-flex-start">
         {/* <label class="label has-text-left is-uppercase" htmlFor={field.name}>{label}</label> */}
         <label
           class={`label has-text-left is-uppercase ${
@@ -38,6 +38,7 @@ export default function Input({label, ...props}) { //destructure props
           {...field}
           {...props}
           placeholder={`${placeholders[`${field.name}`]}`}
+          autoComplete="off"
         ></input>
         <ErrorMessage
           component="div"
