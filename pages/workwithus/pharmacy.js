@@ -2,6 +2,7 @@ import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+import RequestForm from '../../components/RequestForm';
 
 export default function pharmacy() {
   return (
@@ -37,9 +38,7 @@ export default function pharmacy() {
           <figure class="image is-fluid mb-4">
             <img src="/pharmacy.jpg" />
           </figure>
-          <button class="button is-large is-fullwidth is-success">
-            Request a Quote
-          </button>
+          <RequestForm nameOfService="e-Pharmacy" />
         </div>
       </div>
     </section>

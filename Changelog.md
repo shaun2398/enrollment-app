@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+10/24/2022
+
+### Added
+ - Request Quote Button with Emailjs
+
 10/21/2022
 
 ### Update

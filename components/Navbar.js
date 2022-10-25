@@ -6,12 +6,12 @@ export default function Navbar() {
     const [isActive, setisActive] = useState(false)
   return (
     <nav
-      className="navbar is-primary is-spaced"
+      class="navbar is-primary is-spaced"
       role="navigation"
       aria-label="main navigation"
     >
-      <div className="navbar-brand">
-        <a href="/" className="navbar-item">
+      <div class="navbar-brand">
+        <a href="/" class="navbar-item">
           <img
             src="https://bulma.io/images/bulma-logo.png"
             alt="Logo"
@@ -25,7 +25,7 @@ export default function Navbar() {
             setisActive(!isActive);
           }}
           role="button"
-          className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
+          class={`navbar-burger burger ${isActive ? "is-active" : ""}`}
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarBasicExample"
@@ -37,18 +37,18 @@ export default function Navbar() {
       </div>
       <div
         id="navbarBasicExample"
-        className={`navbar-menu ${isActive ? "is-active" : ""}`}
+        class={`navbar-menu ${isActive ? "is-active" : ""}`}
       >
-        <div className="navbar-end">
-          <div className="navbar-item">
+        <div class="navbar-end">
+          <div class="navbar-item">
             <Link href="/">
-              <a className="navbar-item">Home</a>
+              <a class="navbar-item">Home</a>
             </Link>
             <Link href="/info/about">
-              <a className="navbar-item">About</a>
+              <a class="navbar-item">About</a>
             </Link>
             <Link href="/info/services">
-              <a className="navbar-item">Services</a>
+              <a class="navbar-item">Services</a>
             </Link>
           </div>
         </div>

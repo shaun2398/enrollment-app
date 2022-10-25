@@ -1,4 +1,5 @@
 import React from 'react'
+import RequestForm from '../../components/RequestForm';
 
 export default function consultation() {
   return (
@@ -27,9 +28,7 @@ export default function consultation() {
           <figure class="image fluid mb-4">
             <img src="/consultation.jpg" />
           </figure>
-          <button class="button is-large is-fullwidth is-success">
-            Request a Quote
-          </button>
+          <RequestForm nameOfService="consultation"/>
         </div>
       </div>
     </section>

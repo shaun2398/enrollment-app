@@ -20,10 +20,22 @@ export default function form() {
   const initialState = useSelector((state) => state.userData); //access state from redux store
   const dispatch = useDispatch(); // used to call action
 
+  // for select input
+  const genderOption = [
+    {
+      id: 1,
+      name: "Male",
+    },
+    {
+      id: 2,
+      name: "Female",
+    },
+  ];
+
   return (
     <section class="section">
-      <div className="container notification">
-        <div className="has-text-centered py-6">
+      <div class="container notification">
+        <div class="has-text-centered py-6">
           <Formik
             initialValues={initialState.values}
             validationSchema={validationSchema}
@@ -39,7 +51,7 @@ export default function form() {
                   <Input name="firstName" label="First Name" type="text" />
                   <Input name="middleName" label="Middle Name" type="text" />
                   <Input name="lastName" label="Last Name" type="text" />
-                  <Select name="gender" label="gender" />
+                  <Select name="gender" label="gender" selectOptions={genderOption}/>
                   <Input
                     name="birthday"
                     label="Birthday: MM/DD/YYYY"

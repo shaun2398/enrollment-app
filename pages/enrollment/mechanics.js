@@ -14,11 +14,11 @@ export default function mechanics() {
 
 
   return (
-    <section className="section">
-      <div className="container notification">
-        <div className="content is-large has-text-centered">
+    <section class="section">
+      <div class="container notification">
+        <div class="content is-large has-text-centered">
           <SectionTitle name="Let's Get Started" />
-          <p className="content has-text-centered has-text-justified my-6">
+          <p class="content has-text-centered has-text-justified my-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, Sed ut
             perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
@@ -27,7 +27,7 @@ export default function mechanics() {
             aut odit aut fugit, sed quia consequuntur magni dolores eos qui
             ratione voluptatem sequi nesciunt.
           </p>
-          <p className="content has-text-centered has-text-justified my-6">
+          <p class="content has-text-centered has-text-justified my-6">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae ab illo inventore veritatis et quasi architecto beatae vitae
@@ -43,10 +43,10 @@ export default function mechanics() {
             consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
             pariatur
           </p>
-          <div className="container">
+          <div class="container">
             <Checkbox toggleAgree={toggleAgree} />
           </div>
-          <div className="container">
+          <div class="container">
             <Button
               name="next"
               nextPage="/enrollment/forms"

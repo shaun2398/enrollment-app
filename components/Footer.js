@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer class="footer">
       <div class="container is-desktop is-fluid columns">
         <div class="column content is-7">
           <a href="/">
@@ -16,7 +16,7 @@ export default function Footer() {
           </a>
           <br />
           <br />
-          <p className="has-text-white">
+          <p class="has-text-white">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur.
             <br />
@@ -32,7 +32,7 @@ export default function Footer() {
         </div>
 
         <div class="column content">
-          <h4 className="is-uppercase has-text-white">work with us</h4>
+          <h4 class="is-uppercase has-text-white">work with us</h4>
           <br />
           <p>
             <Link href="/workwithus/pharmacy">
@@ -55,7 +55,7 @@ export default function Footer() {
         </div>
 
         <div class="column content">
-          <h4 className="is-uppercase has-text-white">learn more</h4>
+          <h4 class="is-uppercase has-text-white">learn more</h4>
           <br />
           <p>
             <a href="/info/terms">Terms and Conditions</a>

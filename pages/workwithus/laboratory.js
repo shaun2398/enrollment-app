@@ -3,6 +3,8 @@ import React from 'react'
 import { faFlaskVial, faMicroscope, faPills } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import RequestForm from '../../components/RequestForm';
+
 export default function laboratory() {
   return (
     <section class="section is-medium notification">
@@ -42,9 +44,7 @@ export default function laboratory() {
           <figure class="image is-fluid mb-4">
             <img src="/laboratory.jpg" />
           </figure>
-          <button class="button is-large is-fullwidth is-success">
-            Request a Quote
-          </button>
+          <RequestForm nameOfService="laboratory"/>
         </div>
       </div>
     </section>
