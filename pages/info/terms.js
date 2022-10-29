@@ -4,7 +4,8 @@ import SectionTitle from '../../components/SectionTitle';
 
 import styles from '../../styles/Terms.module.css'
 
-import { termsAndConditions } from './service/termsAndConditions';
+// import { termsAndConditions } from './service/termsAndConditions';
+import { termsAndConditions } from '../../service/termsAndConditions';
 
 export default function terms() {
 

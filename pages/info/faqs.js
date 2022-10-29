@@ -3,7 +3,7 @@ import React from 'react'
 import Collapsible from '../../components/Collapsible';
 import SectionTitle from '../../components/SectionTitle';
 
-import { faqs } from './service';
+import { faqs } from '../../service/index';
 
 
 
