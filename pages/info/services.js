@@ -4,7 +4,7 @@ import Card from '../../components/Card'
 import SectionTitle from '../../components/SectionTitle'
 
 import styles from '../../styles/Services.module.css'
-import { servicesData } from './service/serviceData';
+import { servicesData } from "../../service/serviceData";
 
 export default function services() {
   return (
