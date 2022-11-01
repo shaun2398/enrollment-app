@@ -16,14 +16,17 @@ async function handler (req, res) {
 
     const auth = new google.auth.GoogleAuth({
       credentials: {
-        client_email: process.env.CLIENT_EMAIL,
-        client_id: process.env.CLIENT_ID,
-        private_key: process.env.PRIVATE_KEY.replace(/\\n/g, '\n'),
+        client_email: process.env.NEXT_PUBLIC_VERCEL_CLIENT_EMAIL,
+        client_id: process.env.NEXT_PUBLIC_VERCEL_CLIENT_ID,
+        private_key: process.env.NEXT_PUBLIC_VERCEL_PRIVATE_KEY.replace(
+          /\\n/g,
+          "\n"
+        ),
       },
       scopes: [
-        'https://www.googleapis.com/auth/drive',
-        'https://www.googleapis.com/auth/drive.file',
-        'https://www.googleapis.com/auth/spreadsheets',
+        "https://www.googleapis.com/auth/drive",
+        "https://www.googleapis.com/auth/drive.file",
+        "https://www.googleapis.com/auth/spreadsheets",
       ],
     });
 
@@ -34,7 +37,7 @@ async function handler (req, res) {
 
     
     const response = await sheets.spreadsheets.values.append({
-      spreadsheetId: process.env.SPREADSHEET_ID,
+      spreadsheetId: process.env.NEXT_PUBLIC_VERCEL_SPREADSHEET_ID,
       range: "MEMBERS!A2:H",
       valueInputOption: "USER_ENTERED",
       requestBody: {
