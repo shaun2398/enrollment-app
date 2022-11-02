@@ -7,9 +7,9 @@ async function handler (req, res) {
 
     const auth = new google.auth.GoogleAuth({
       credentials: {
-        client_email: process.env.NEXT_PUBLIC_VERCEL_CLIENT_EMAIL,
-        client_id: process.env.NEXT_PUBLIC_VERCEL_CLIENT_ID,
-        private_key: process.env.NEXT_PUBLIC_VERCEL_PRIVATE_KEY.replace(/\\n/g, '\n'),
+        client_email: process.env.NEXT_PUBLIC_CLIENT_EMAIL,
+        client_id: process.env.NEXT_PUBLIC_CLIENT_ID,
+        private_key: process.env.NEXT_PUBLIC_PRIVATE_KEY.replace(/\\n/g, '\n'),
       },
       scopes: [
         'https://www.googleapis.com/auth/drive',
