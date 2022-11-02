@@ -26,7 +26,7 @@ export default function summary() {
               'Content-Type': 'application/json',
             },
         })
-        console.log(process.env.NEXT_PUBLIC_CLIENT_EMAIL, process.env.NEXT_PUBLIC_CLIENT_ID, process.env.NEXT_PUBLIC_PRIVATE_KEY, process.env.NEXT_PUBLIC_VERCEL_SPREADSHEET_ID)
+        console.log(process.env.NEXT_PUBLIC_CLIENT_EMAIL, process.env.NEXT_PUBLIC_CLIENT_ID, process.env.NEXT_PUBLIC_PRIVATE_KEY, process.env.NEXT_PUBLIC_SPREADSHEET_ID)
   }
 
   return (
