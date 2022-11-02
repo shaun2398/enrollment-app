@@ -25,7 +25,7 @@ async function handler (req, res) {
 
     
     const response = await sheets.spreadsheets.values.append({
-      spreadsheetId: process.env.NEXT_PUBLIC_VERCEL_SPREADSHEET_ID,
+      spreadsheetId: process.env.NEXT_PUBLIC_SPREADSHEET_ID,
       range: "MESSAGES!A2:C",
       valueInputOption: "USER_ENTERED",
       requestBody: {
