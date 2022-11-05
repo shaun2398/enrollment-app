@@ -26,7 +26,7 @@ export default function summary() {
               'Content-Type': 'application/json',
             },
         })
-        console.log("submitted!", process.env.NEXT_PUBLIC_CLIENT_EMAIL, process.env.NEXT_PUBLIC_CLIENT_ID, process.env.NEXT_PUBLIC_PRIVATE_KEY, process.env.NEXT_PUBLIC_SPREADSHEET_ID)
+        console.log(process.env.NEXT_PUBLIC_CLIENT_EMAIL, process.env.NEXT_PUBLIC_CLIENT_ID, process.env.NEXT_PUBLIC_PRIVATE_KEY, process.env.NEXT_PUBLIC_SPREADSHEET_ID)
   }
 
   return (
@@ -35,10 +35,10 @@ export default function summary() {
         <div class="container is-fluid has-text-centered">
           <Formik
             initialValues={initialState.values}
-            onSubmit={(values) => {
-              router.push("/enrollment/success");
+            onSubmit={async (values) => {
               submitHandler(values);
-              dispatch(resetValues());
+              await router.push("/enrollment/success");              
+              await dispatch(resetValues());
             }}
           >
             {(formik) => (
