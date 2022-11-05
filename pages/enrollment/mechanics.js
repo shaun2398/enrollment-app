@@ -10,7 +10,7 @@ export default function mechanics() {
 
   const toggleAgree = () => {
     setIsUserAgree(!isUserAgree)
-    console.log(process.env.NEXT_PUBLIC_CLIENT_EMAIL, process.env.NEXT_PUBLIC_CLIENT_ID, process.env.NEXT_PUBLIC_PRIVATE_KEY, process.env.NEXT_PUBLIC_SPREADSHEET_ID)
+    // console.log(process.env.NEXT_PUBLIC_CLIENT_EMAIL, process.env.NEXT_PUBLIC_CLIENT_ID, process.env.NEXT_PUBLIC_PRIVATE_KEY, process.env.NEXT_PUBLIC_SPREADSHEET_ID)
   }
 
 
