@@ -7,7 +7,7 @@ async function handler (req, res) {
           middleName,
           lastName,
           gender,
-          dateOfBirth,
+          birthday,
           email,
           phoneNumber,
           completeAddress,
@@ -18,8 +18,7 @@ async function handler (req, res) {
       credentials: {
         client_email: process.env.NEXT_PUBLIC_CLIENT_EMAIL,
         client_id: process.env.NEXT_PUBLIC_CLIENT_ID,
-        // private_key: process.env.NEXT_PUBLIC_PRIVATE_KEY.replace(/\\n/g, "\n"), use this in local device only
-        private_key: process.env.NEXT_PUBLIC_PRIVATE_KEY,
+        private_key: process.env.NEXT_PUBLIC_PRIVATE_KEY.replace(/\\n/g, "\n"),
       },
       scopes: [
         "https://www.googleapis.com/auth/drive",
@@ -45,7 +44,7 @@ async function handler (req, res) {
             middleName,
             lastName,
             gender,
-            dateOfBirth,
+            birthday,
             email,
             phoneNumber,
             completeAddress,
