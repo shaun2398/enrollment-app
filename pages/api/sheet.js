@@ -18,7 +18,6 @@ async function handler (req, res) {
       credentials: {
         client_email: process.env.NEXT_PUBLIC_CLIENT_EMAIL,
         client_id: process.env.NEXT_PUBLIC_CLIENT_ID,
-        // private_key: process.env.NEXT_PUBLIC_PRIVATE_KEY,
         private_key: process.env.NEXT_PUBLIC_PRIVATE_KEY.replace(/\\n/g, "\n"),
       },
       scopes: [

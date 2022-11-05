@@ -35,10 +35,10 @@ export default function summary() {
         <div class="container is-fluid has-text-centered">
           <Formik
             initialValues={initialState.values}
-            onSubmit={async (values) => {
+            onSubmit={(values) => {
               submitHandler(values);
-              await router.push("/enrollment/success");              
-              await dispatch(resetValues());
+              router.push("/enrollment/success");              
+              dispatch(resetValues());
             }}
           >
             {(formik) => (
