@@ -1,14 +1,16 @@
 import React from 'react'
 import Link from 'next/link';
 
+import MyImage from "../components/MyImage"
+
 export default function Card(props) {
     const {image, alt, title, content, nextPage} = props
 
   return (
     <div class="card m-6">
       <div class="card-image">
-        <figure class="image is-4by3">
-          <img src={image} alt={alt} />
+        <figure class="image">
+          <MyImage src={image} alt={alt} height="300" width="500" />
         </figure>
       </div>
       <div class="card-content">

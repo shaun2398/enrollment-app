@@ -1,6 +1,8 @@
 import React from 'react'
 import RequestForm from '../../components/RequestForm';
 
+import MyImage from '../../components/MyImage'
+
 export default function consultation() {
   return (
     <section class="section is-medium notification">
@@ -25,10 +27,15 @@ export default function consultation() {
           </ol>
         </div>
         <div class="column is-flex is-justify-content-start is-flex-direction-column mx-auto">
-          <figure class="image fluid mb-4">
-            <img src="/consultation.jpg" />
+          <figure class="image fluid">
+            <MyImage
+              src="/consultation.jpg"
+              height="300"
+              width="500"
+              alt="consultation picture"
+            />
           </figure>
-          <RequestForm nameOfService="consultation"/>
+          <RequestForm nameOfService="consultation" />
         </div>
       </div>
     </section>
