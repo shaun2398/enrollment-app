@@ -3,6 +3,7 @@ import React from 'react'
 import AboutCard from '../../components/info/AboutCard';
 import MissionCard from '../../components/info/MissionCard';
 import VisionCard from '../../components/info/VisionCard';
+import MyImage from '../../components/MyImage';
 import SectionTitle from '../../components/SectionTitle'
 
 

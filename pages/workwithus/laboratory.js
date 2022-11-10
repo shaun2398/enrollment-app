@@ -3,6 +3,7 @@ import React from 'react'
 import { faFlaskVial, faMicroscope, faPills } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import MyImage from '../../components/MyImage';
 import RequestForm from '../../components/RequestForm';
 
 export default function laboratory() {
@@ -41,8 +42,13 @@ export default function laboratory() {
           </p>
         </div>
         <div class="column is-flex is-justify-content-start is-flex-direction-column mx-auto">
-          <figure class="image is-fluid mb-4">
-            <img src="/laboratory.jpg" />
+            <figure class="image fluid">
+            <MyImage
+              src="/laboratory.jpg"
+              height="300"
+              width="500"
+              alt="laboratory picture"
+            />
           </figure>
           <RequestForm nameOfService="laboratory"/>
         </div>

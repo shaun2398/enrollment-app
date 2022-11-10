@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import RequestForm from '../../components/RequestForm';
 
+import MyImage from '../../components/MyImage';
+
 export default function pharmacy() {
   return (
     <section class="section is-medium notification">
@@ -35,8 +37,13 @@ export default function pharmacy() {
           </p>
         </div>
         <div class="column is-flex is-justify-content-start is-flex-direction-column mx-auto">
-          <figure class="image is-fluid mb-4">
-            <img src="/pharmacy.jpg" />
+          <figure class="image fluid">
+            <MyImage
+              src="/pharmacy.jpg"
+              height="300"
+              width="500"
+              alt="pharmacy picture"
+            />
           </figure>
           <RequestForm nameOfService="e-Pharmacy" />
         </div>

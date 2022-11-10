@@ -10,7 +10,7 @@ export default function Button(props) {
   return (
     <Link href={`${nextPage}`}>
         <button
-          class={`button is-${size} is-${buttonColor} my-6 is-fullwidth is-uppercase`}
+          class={`button is-${size} is-${buttonColor} my-6 is-fullwidth is-uppercase is-responsive`}
           title={name}
           type={buttonType}
           disabled={hasToggle}
