@@ -7,7 +7,7 @@ async function handler (req, res) {
           middleName,
           lastName,
           gender,
-          dateOfBirth,
+          birthday,
           email,
           phoneNumber,
           completeAddress,
@@ -16,9 +16,9 @@ async function handler (req, res) {
 
     const auth = new google.auth.GoogleAuth({
       credentials: {
-        client_email: process.env.NEXT_PUBLIC_VERCEL_CLIENT_EMAIL,
-        client_id: process.env.NEXT_PUBLIC_VERCEL_CLIENT_ID,
-        private_key: process.env.NEXT_PUBLIC_VERCEL_PRIVATE_KEY.replace(/\\n/g,'\n'),
+        client_email: process.env.NEXT_PUBLIC_CLIENT_EMAIL,
+        client_id: process.env.NEXT_PUBLIC_CLIENT_ID,
+        private_key: process.env.NEXT_PUBLIC_PRIVATE_KEY.replace(/\\n/g,'\n'),
       },
       scopes: [
         "https://www.googleapis.com/auth/drive",
@@ -34,7 +34,7 @@ async function handler (req, res) {
 
     
     const response = await sheets.spreadsheets.values.append({
-      spreadsheetId: process.env.NEXT_PUBLIC_VERCEL_SPREADSHEET_ID,
+      spreadsheetId: process.env.NEXT_PUBLIC_SPREADSHEET_ID,
       range: "MEMBERS!A2:H",
       valueInputOption: "USER_ENTERED",
       requestBody: {
@@ -44,7 +44,7 @@ async function handler (req, res) {
             middleName,
             lastName,
             gender,
-            dateOfBirth,
+            birthday,
             email,
             phoneNumber,
             completeAddress,

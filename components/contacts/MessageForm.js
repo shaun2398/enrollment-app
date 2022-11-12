@@ -8,7 +8,6 @@ import TextBox from '../TextBox';
 
 
 
-import { useRouter } from 'next/router';
 import { messageInitialValues } from './utils/messageInitialValues';
 import { messageFormValidation } from './services/messageFormValidation';
 
@@ -40,9 +39,9 @@ export default function MessageForm() {
             <SuccessMessage message="Message Sent!" />
           ) : (
             <Form>
-              <h2 class="title is-uppercase has-text-left is-underlined">
+              <h3 class="title is-uppercase has-text-centered is-underlined is-size-3-tablet is-size-4">
                 message us
-              </h2>
+              </h3>
               <Input
                 name="completeName"
                 label="Name, Affiliation, Org etc."
@@ -50,11 +49,13 @@ export default function MessageForm() {
               />
               <Input name="email" label="Email" type="email" />
               <TextBox name="description" label="description" type="text" />
-              <SubmitButton
-                name="submit"
-                size="medium"
-                hasToggle={!formik.isValid}
-              />
+              <div class="my-4">
+                <SubmitButton
+                  name="submit"
+                  size="medium"
+                  hasToggle={!formik.isValid}
+                />
+              </div>
             </Form>
           )}
         </div>

@@ -40,15 +40,15 @@ export default function summary() {
               dispatch(resetValues());
             }}
           >
-            {(formik) => (
+            {() => (
               <div class="container">
                 <div class="is-underlined has-text-centered">
                   <SectionTitle name="Confirm Your Details" />
                 </div>
                 <Form>
                   <div>
-                    {/* access redux data in the table component */}
                     <Table />
+                    {/* access redux data in the table component */}
                   </div>
                   {/* buttongroup */}
                   <div class="field columns is-desktop box notification is-info is-light">
