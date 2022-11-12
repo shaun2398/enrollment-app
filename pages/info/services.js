@@ -25,9 +25,9 @@ export default function services() {
           </p>
         </div>
       </div>
-      <div class="container is-fluid columns is-desktop">
+      <div class="columns is-desktop container is-fluid">
         {servicesData.map((card) => (
-          <div class="column">
+          <div class="column is-fluid mx-auto">
               <Card
                 title={card.title}
                 image={card.image}

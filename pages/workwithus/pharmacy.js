@@ -11,8 +11,8 @@ export default function pharmacy() {
     <section class="section is-medium notification">
       <div class="columns is-desktop box notification is-half container mx-auto">
         <div class="column content has-text-justified px-6">
-          <h3 class="is-size-3 title is-underlined">e-Pharmacy</h3>
-          <p>
+          <h3 class="is-size-3-desktop title is-underlined">Pharmacy</h3>
+          <p class="is-size-4-desktop">
             Quisque ante lacus, malesuada ac auctor vitae, congue non ante.
             Phasellus lacus ex, semper ac tortor nec, fringilla condimentum
             orci. Fusce eu rutrum tellus.

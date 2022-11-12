@@ -8,7 +8,7 @@ export default function SubmitButton(props) {
 
   return (
       <button
-        class={`button is-${size} is-${buttonColor} is-fullwidth is-uppercase my-6`}
+        class={`button is-${size} is-${buttonColor} is-fullwidth is-uppercase is-responsive`}
         title={name}
         type='submit'
         disabled={hasToggle}

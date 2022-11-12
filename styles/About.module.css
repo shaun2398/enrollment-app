@@ -7,8 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url('/about_page_hero.jpg'); /* blurs background image */
-    background-position: center bottom;
+    background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.5)), url('/about_page_hero.jpg'); /* blurs background image */
+    background-position: center center;
     background-repeat:  no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -16,3 +16,16 @@
     width: 100vw;
     flex-direction: column;
 }
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .about_hero {
+      background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.5)), url('/about_page_hero.jpg'); 
+      background-position: bottom;
+      background-repeat:  no-repeat;
+      /* background-attachment: fixed; */
+      background-size: cover;
+    }
+  }

@@ -33,9 +33,9 @@ export default function form() {
   ];
 
   return (
-    <section class="section">
-      <div class="container notification">
-        <div class="has-text-centered py-6">
+    <section class="section is-fullwidth">
+      <div class="container is-desktop notification">
+        <div class="container is-fullwidth has-text-centered">
           <Formik
             initialValues={initialState.values}
             validationSchema={validationSchema}
@@ -46,22 +46,22 @@ export default function form() {
           >
             {(formik) => (
               <div>
-                <SectionTitle name="Enter Personal Information" />
-                <Form class="box">
+                <SectionTitle name="Enter Your Details" />
+                <Form>
                   <Input name="firstName" label="First Name" type="text" />
                   <Input name="middleName" label="Middle Name" type="text" />
                   <Input name="lastName" label="Last Name" type="text" />
                   <Select name="gender" label="gender" selectOptions={genderOption}/>
                   <Input
                     name="birthday"
-                    label="Birthday: MM/DD/YYYY"
+                    label="Birthday"
                     type="text"
                   />
                   <Input name="email" label="Email" type="email" />
                   <Input name="phoneNumber" label="Phone Number" type="tel" />
                   <Input
                     name="completeAddress"
-                    label="Complete Address: House #, Street, District, City/Municipality"
+                    label="Complete Address"
                     type="text"
                   />
                   {/* submit button should not have Link wrapper  */}

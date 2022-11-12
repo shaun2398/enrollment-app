@@ -5,7 +5,7 @@
 }
 
 .services_hero{
-    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url('/service_page.jpg'); 
+    background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.5)), url('/service_page.jpg'); 
     background-position: center bottom;
     background-repeat:  no-repeat;
     background-attachment: fixed;
@@ -19,3 +19,12 @@
     justify-content: center;
     align-items: center;
 }
+
+@media only screen and (max-width: 768px) {
+    .services_hero {
+      background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.5)), url('/service_page.jpg'); 
+      background-position: center bottom;
+      background-repeat:  no-repeat;
+      background-size: cover;
+    }
+  }
