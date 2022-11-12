@@ -18,7 +18,11 @@ async function handler (req, res) {
       credentials: {
         client_email: process.env.NEXT_PUBLIC_CLIENT_EMAIL,
         client_id: process.env.NEXT_PUBLIC_CLIENT_ID,
+<<<<<<< HEAD
         private_key: process.env.NEXT_PUBLIC_PRIVATE_KEY.replace(/\\n/g, "\n"),
+=======
+        private_key: process.env.NEXT_PUBLIC_PRIVATE_KEY.replace(/\\n/g,'\n'),
+>>>>>>> develop
       },
       scopes: [
         "https://www.googleapis.com/auth/drive",

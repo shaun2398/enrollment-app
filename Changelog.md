@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+12/10/2022
+
+### Updated
+ - make pages responsive
+ - contacts page
+ - success page
+ 
 11/10/2022
 
 ### Updated
