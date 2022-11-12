@@ -7,10 +7,10 @@ export default function Card(props) {
     const {image, alt, title, content, nextPage} = props
 
   return (
-    <div class="card m-6">
+    <div class="my-4 card container is-max-widescreen mx-auto">
       <div class="card-image">
         <figure class="image">
-          <MyImage src={image} alt={alt} height="300" width="500" />
+          <MyImage src={image} alt={alt} height="700" width="900" />
         </figure>
       </div>
       <div class="card-content">

@@ -29,9 +29,9 @@ export default function summary() {
   }
 
   return (
-    <section class="section">
-      <div class="container notification">
-        <div class="container is-fluid has-text-centered">
+    <section class="section notification">
+      <div>
+        <div>
           <Formik
             initialValues={initialState.values}
             onSubmit={(values) => {
@@ -41,28 +41,27 @@ export default function summary() {
             }}
           >
             {(formik) => (
-              <div>
-                <div class="is-underlined">
+              <div class="container">
+                <div class="is-underlined has-text-centered">
                   <SectionTitle name="Confirm Your Details" />
                 </div>
                 <Form>
-                  <div class="container my-5">
+                  <div>
                     {/* access redux data in the table component */}
                     <Table />
                   </div>
-
                   {/* buttongroup */}
-                  <div class="field is-grouped container is-fluid is-flex is-justify-content-space-between">
-                    <p class="control">
+                  <div class="field columns is-desktop box notification is-info is-light">
+                    <div class="control column">
                       <Button
                         name="back"
                         nextPage="/enrollment/forms"
                         size="large"
                       />
-                    </p>
-                    <p class="control">
+                    </div>
+                    <div class="control column">
                       <SubmitButton name="submit" size="large" />
-                    </p>
+                    </div>
                   </div>
                 </Form>
               </div>

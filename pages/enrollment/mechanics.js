@@ -18,7 +18,7 @@ export default function mechanics() {
       <div class="container notification">
         <div class="content is-large has-text-centered">
           <SectionTitle name="Let's Get Started" />
-          <p class="content has-text-centered has-text-justified my-6">
+          <p class="content has-text-centered has-text-justified my-6 is-size-4-desktop">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, Sed ut
             perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
@@ -27,7 +27,7 @@ export default function mechanics() {
             aut odit aut fugit, sed quia consequuntur magni dolores eos qui
             ratione voluptatem sequi nesciunt.
           </p>
-          <p class="content has-text-centered has-text-justified my-6">
+          <p class="content has-text-centered has-text-justified my-6 is-size-4-desktop">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae ab illo inventore veritatis et quasi architecto beatae vitae

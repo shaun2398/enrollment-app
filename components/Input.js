@@ -11,10 +11,10 @@ export default function Input({label, ...props}) { //destructure props
       firstName: "Juan",
       middleName: "Reyes",
       lastName: "Dela Cruz",
-      completeAddress: "7114 Kundiman Street Sampaloc, Manila",
+      completeAddress: "House #, Street Name, City/Municipality",
       phoneNumber: "+639123456789 or 09123456789",
       email: "jdelacruz@gmail.com",
-      birthday: "01/01/2004",
+      birthday: "MM/DD/YYYY",
       completeName: "Juan Reyes Dela Cruz"
     };
     
@@ -24,7 +24,7 @@ export default function Input({label, ...props}) { //destructure props
       <div class="control is-large is-flex is-flex-direction-column is-align-items-flex-start">
         {/* <label class="label has-text-left is-uppercase" htmlFor={field.name}>{label}</label> */}
         <label
-          class={`label has-text-left is-uppercase ${
+          class={`label has-text-left is-uppercase${
             label === "email" ? "is-lowercase" : ""
           }`}
           htmlFor={field.name}
