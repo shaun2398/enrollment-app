@@ -8,7 +8,7 @@ import { servicesData } from "../../service/serviceData";
 
 export default function services() {
   return (
-    <div>
+    <div className={styles.services_container}>
       <div className={styles.services_hero}>
         <SectionTitle name="Services" />
       </div>

@@ -8,7 +8,7 @@ import SectionTitle from '../../components/SectionTitle';
 
 export default function success() {
   return (
-    <section class="section is-medium has-text-centered">
+    <div class="notification has-text-centered">
       <span class="icon has-text-success is-large is-size-1">
         <FontAwesomeIcon
           icon={faCheckCircle}
@@ -24,6 +24,6 @@ export default function success() {
           </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

@@ -33,8 +33,7 @@ export default function form() {
   ];
 
   return (
-    <section class="section is-fullwidth">
-      <div class="container is-desktop notification">
+      <div class="container notification">
         <div class="container is-fullwidth has-text-centered">
           <Formik
             initialValues={initialState.values}
@@ -79,6 +78,5 @@ export default function form() {
           </Formik>
         </div>
       </div>
-    </section>
   );
 }

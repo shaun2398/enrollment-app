@@ -30,7 +30,7 @@ export default function summary() {
   }
 
   return (
-      <div>
+      <div class="container notification">
         <div>
           <Formik
             initialValues={initialState.values}
