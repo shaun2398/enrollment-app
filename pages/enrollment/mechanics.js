@@ -15,7 +15,7 @@ export default function mechanics() {
 
 
   return (
-    <section class="section">
+    <div>
       <div class="container notification">
         <div class="content is-large has-text-centered">
           <SectionTitle name="Let's Get Started" />
@@ -57,6 +57,6 @@ export default function mechanics() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

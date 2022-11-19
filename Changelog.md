@@ -6,8 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+11/19/2022
 
-12/10/2022
+### Updated
+- update containers
+- terms and conditions
+- success page
+
+11/10/2022
 
 ### Updated
  - make pages responsive

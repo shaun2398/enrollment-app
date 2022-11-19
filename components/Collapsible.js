@@ -27,7 +27,7 @@ export default function Collapsible(props) {
         <p
           class={`content ${toggle ? "" : "is-hidden"} notification is-success mt-2`}
         >
-          Answer: {content}
+        {content}
         </p>
       </div>
     </div>
