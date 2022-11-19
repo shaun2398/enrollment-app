@@ -10,7 +10,7 @@ export default function terms() {
 
 
        return (
-         <section class="section notification has-text-centered">
+         <div class="notification has-text-centered">
            <SectionTitle name="Terms and Conditions" />
            <div class="container box is-size-5-mobile">
              <div className={styles.terms}>
@@ -27,6 +27,6 @@ export default function terms() {
                </ol>
              </div>
            </div>
-         </section>
+         </div>
        );
 }

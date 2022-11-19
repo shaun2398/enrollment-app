@@ -29,7 +29,6 @@ export default function summary() {
   }
 
   return (
-    <section class="section notification">
       <div>
         <div>
           <Formik
@@ -69,6 +68,5 @@ export default function summary() {
           </Formik>
         </div>
       </div>
-    </section>
   );
 }
