@@ -7,7 +7,7 @@ export default function consultation() {
   return (
     <section class="section is-medium notification">
       <div class="columns is-desktop box notification is-half container mx-auto">
-        <div class="column content has-text-justified px-6">
+        <div class="column content has-text-justified">
           <h3 class="is-size-3-desktop title is-underlined">Online Consultation</h3>
           <p>
             Quisque ante lacus, malesuada ac auctor vitae, congue non ante.

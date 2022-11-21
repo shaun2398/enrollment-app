@@ -22,8 +22,8 @@ export default function Table() {
   } = initialState.values;
 
   return (
-    <div class="container">
-      <table class="table table is-hoverable is-fullwidth">
+    <div class="container is-bordered">
+      <table class="table is-striped is-fullwidth is-bordered">
         <tbody>
           <tr class="my-4 columns is-tablet">
             <th class="column">
