@@ -39,7 +39,7 @@ export default function MessageForm() {
             <SuccessMessage message="Message Sent!" />
           ) : (
             <Form>
-              <h3 class="title is-uppercase has-text-centered is-underlined is-size-3-tablet is-size-4">
+              <h3 class="is-uppercase has-text-centered is-size-3-tablet title">
                 message us
               </h3>
               <Input

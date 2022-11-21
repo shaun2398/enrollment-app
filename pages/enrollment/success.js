@@ -15,6 +15,7 @@ export default function success() {
         ></FontAwesomeIcon>
       </span>
       <SectionTitle name="Thank You!" />
+
       <div class="container">
         <div class="content is-large has-text-centered has-text-justified">
           <p class="is-size-3-desktop is-size-4">
